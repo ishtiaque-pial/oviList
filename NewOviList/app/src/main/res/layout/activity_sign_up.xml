@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b1"
+    tools:context="com.example.pial.newovilist.SignUpActivity"
+    android:fitsSystemWindows="true"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="40dp"
+
+            >
+            <ImageView
+                android:layout_marginTop="50dp"
+                android:layout_width="180dp"
+                android:layout_height="100dp"
+                android:src="@drawable/log"
+                android:layout_gravity="center"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    >
+                    <View
+                        android:layout_width="100dp"
+                        android:layout_height="1dp"
+                        android:background="@color/colorPrimary"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Register With Social media"
+                        android:textColor="@color/textColor"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:layout_gravity="center"
+                        />
+                    <View
+                        android:layout_width="100dp"
+                        android:layout_height="1dp"
+                        android:background="@color/colorPrimary"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    >
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/circle_24dp"
+                        android:src="@drawable/face"
+                        />
+                    <ImageButton
+                        android:layout_marginLeft="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/circle_24dp"
+                        android:src="@drawable/google"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    >
+                    <View
+                        android:layout_width="200dp"
+                        android:layout_height="1dp"
+                        android:background="@color/colorPrimary"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Or Register"
+                        android:textStyle="bold"
+                        android:textColor="@color/textColor"
+                        android:textAllCaps="true"
+                        />
+                    <View
+                        android:layout_width="200dp"
+                        android:layout_height="1dp"
+                        android:background="@color/colorPrimary"
+
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/signup_input_name"
+                android:theme="@style/EditTextHint"
+                >
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/signUp_name"
+                    android:inputType="textCapWords"
+                    android:maxLines="1"
+                    android:paddingLeft="40dp"
+                    android:textColor="@color/textColor"
+                    android:hint="Enter your name"
+                    />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/signup_input_email"
+                android:theme="@style/EditTextHint"
+                >
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/signUp_email"
+                    android:inputType="textCapWords"
+                    android:maxLines="1"
+                    android:textColor="@color/textColor"
+                    android:paddingLeft="40dp"
+                    android:hint="Enter your mail"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/signup_input_phone"
+                android:theme="@style/EditTextHint"
+
+                >
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/signUp_phone"
+                    android:inputType="phone"
+                    android:maxLines="1"
+                    android:paddingLeft="40dp"
+                    android:textColor="@color/textColor"
+                    android:hint="Phone"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="40dp"
+                android:paddingTop="10dp"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gender"
+                    android:layout_marginTop="6dp"
+                    android:textColor="@color/colorAccent"
+                    />
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Male"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@color/textColor"
+                        android:buttonTint="@color/colorAccent"
+                        android:id="@+id/signUp_male"
+                        />
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Female"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@color/textColor"
+                        android:buttonTint="@color/colorAccent"
+                        android:id="@+id/signUp_female"
+                        />
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/colorAccent"
+
+                />
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/signup_input_password"
+                android:theme="@style/EditTextHint"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/textColor"
+                >
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/signup_password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="30dp"
+                    android:textColor="@color/textColor"
+                    android:maxLines="1"
+                    android:hint="Enter your Password"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/signup_input_password_confirm"
+                android:theme="@style/EditTextHint"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/textColor"
+                >
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/signup_password_confirm"
+                    android:inputType="textPassword"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="30dp"
+                    android:textColor="@color/textColor"
+                    android:maxLines="1"
+                    android:hint="Confirm your Password"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_button"
+                android:text="Registration"
+                android:textAllCaps="false"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center"
+                android:onClick="registration"
+                android:id="@+id/Signupbtn"
+                />
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Already Have an Account? Login"
+                android:textColor="@color/textColor"
+                android:onClick="gotoEmailLoginActivity"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
